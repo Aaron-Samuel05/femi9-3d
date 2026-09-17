@@ -1,0 +1,6 @@
+/* Final hero/logo correction. Keep the original Femi9 logo asset and make the lifestyle image win over CinematicHero's scoped styles. */
+.site-nav .brand img{display:block!important;width:62px!important;height:auto!important;object-fit:contain!important;}
+.site-nav .brand:after{display:none!important;content:none!important;}
+.conversion-hero{background-image:url('/api/image?url=https%3A%2F%2Fcontent.tupaki.com%2Ftupaki%2Ffeeds%2F2026%2F02%2F17%2F1108057-snapinstato44967138016415203666947006884317195019485418n.webp')!important;background-size:cover!important;background-position:center 42%!important;background-repeat:no-repeat!important;}
+.conversion-hero:before{background:linear-gradient(90deg,rgba(22,18,9,.72) 0%,rgba(22,18,9,.43) 25%,rgba(22,18,9,.08) 50%,rgba(22,18,9,.02) 100%),linear-gradient(0deg,rgba(15,13,8,.62),transparent 32%)!important;}
+@media(max-width:900px){.conversion-hero{background-position:54% center!important;}}
