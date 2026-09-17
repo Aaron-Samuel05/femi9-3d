@@ -1,0 +1,2 @@
+import { faqs } from '@/lib/data';
+export default function FAQ(){return <><section className="page-hero"><span className="micro">FEMI9 / SUPPORT</span><h1 className="display">QUESTIONS,<br/><i>ANSWERED.</i></h1><p>Key account, order, shipping, returns and product questions from the current Femi9 FAQ.</p></section><section className="section"><div className="faq-list">{faqs.map(([q,a])=><div className="faq-row" key={q}><h3>{q}</h3><p>{a}</p></div>)}</div></section></>}
