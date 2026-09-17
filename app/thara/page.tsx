@@ -1,0 +1,1 @@
+export default function Thara(){return <section className="page-hero"><span className="micro">FEMI9 / THARA</span><h1 className="display">A SPACE<br/><i>TO EXPLORE.</i></h1><p>This route is retained from the existing Femi9 application structure and can be connected to its live Thara experience when that content is required.</p></section>}
