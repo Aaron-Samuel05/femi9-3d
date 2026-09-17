@@ -104,6 +104,29 @@
 .about-story-image{background-image:url('/api/image?url=https%3A%2F%2Fraw.githubusercontent.com%2FAaron-Samuel05%2Ffemi9%2Fmain%2Fpublic%2Fassets%2Fimg%2Fhero-studio-product.jpg')!important;}
 .affiliate-visual img,.affiliate-reward-visual img{content:url('/api/image?url=https%3A%2F%2Ffemi9.in%2Fuploads%2FProduct%2F1734093124_3LqO07PSLz.webp');}
 
+/* PRODUCT CONFIGURATOR — seamless image stage + live variant image */
+.configure-visual{padding:0!important;background:#f4d873!important;overflow:hidden;}
+.configure-visual .product-turntable{width:100%!important;max-width:none!important;height:100%!important;min-height:0!important;background:#f4d873!important;border-radius:0!important;}
+.configure-visual .package-image-wrap{width:100%!important;height:100%!important;}
+.configure-visual .package-image-halo{width:62%!important;height:46%!important;background:rgba(255,248,203,.58)!important;}
+.configure-visual .package-image{width:100%!important;height:100%!important;object-fit:contain!important;object-position:center!important;filter:drop-shadow(0 28px 32px rgba(60,44,5,.18))!important;}
+.configure-visual .pad-turntable-caption{left:50%!important;bottom:18px!important;padding:9px 14px!important;border-radius:999px!important;background:rgba(255,249,218,.72)!important;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);}
+.visual-tag{left:28px!important;bottom:18px!important;padding:9px 12px!important;border-radius:999px!important;background:rgba(255,249,218,.72);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);}
+@media(max-width:900px){
+  .configure-visual{height:520px!important;padding:0!important;}
+  .configure-visual .product-turntable{height:520px!important;}
+  .configure-visual .package-image-wrap{width:100%!important;height:100%!important;}
+  .configure-visual .package-image{width:100%!important;height:100%!important;object-fit:contain!important;}
+  .configure-visual .package-image-halo{width:72%!important;height:44%!important;}
+  .configure-visual .pad-turntable-caption{bottom:14px!important;font-size:7px!important;}
+  .visual-tag{left:16px!important;bottom:14px!important;font-size:7px!important;}
+}
+@media(max-width:520px){
+  .configure-visual{height:500px!important;}
+  .configure-visual .product-turntable{height:500px!important;}
+  .configure-visual .package-image{padding:0 4px;}
+}
+
 @media(max-width:900px){
   .conversion-hero{height:calc(100svh - 62px);min-height:650px;background-position:54% center;}
   .conversion-detail.detail-left{left:7vw;right:7vw;top:auto;bottom:14%;max-width:390px;}
