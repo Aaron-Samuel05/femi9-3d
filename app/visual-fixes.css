@@ -76,3 +76,33 @@
   .story-stage .editorial-row{grid-template-columns:48px 1fr;gap:14px;}
   .story-stage .editorial-row p{grid-column:2;}
 }
+
+/* IMAGE RELIABILITY + LIFESTYLE HERO */
+.conversion-hero{height:min(900px,calc(100vh - 70px));min-height:700px;background-color:#c8a33b;background-image:url('/api/image?url=https%3A%2F%2Fcontent.tupaki.com%2Ftupaki%2Ffeeds%2F2026%2F02%2F17%2F1108057-snapinstato44967138016415203666947006884317195019485418n.webp');background-size:cover;background-position:center 42%;}
+.conversion-hero:before{background:linear-gradient(90deg,rgba(22,18,9,.72) 0%,rgba(22,18,9,.43) 25%,rgba(22,18,9,.08) 50%,rgba(22,18,9,.02) 100%),linear-gradient(0deg,rgba(15,13,8,.62),transparent 32%);}
+.conversion-noise,.conversion-orbit{display:none;}
+.conversion-grid{height:100%;display:block;max-width:none;}
+.conversion-center,.detail-right{display:none!important;}
+.conversion-detail.detail-left{position:absolute;left:7.5vw;top:20%;max-width:430px;color:#fffdf2;z-index:7;}
+.conversion-detail.detail-left .conversion-kicker{font-size:9px;letter-spacing:.2em;}
+.conversion-detail.detail-left strong{font-size:clamp(50px,6vw,92px);line-height:.9;color:#fffdf2;text-shadow:0 8px 35px rgba(0,0,0,.18);}
+.conversion-detail.detail-left p{font-size:13px;line-height:1.75;max-width:360px;color:rgba(255,253,242,.88);}
+.conversion-detail.detail-left .detail-rule{background:rgba(255,253,242,.5);}
+.conversion-detail.detail-left .detail-label{color:rgba(255,253,242,.86);}
+.conversion-bottom{left:7.5vw;right:7.5vw;bottom:9%;display:block;}
+.conversion-bottom .bottom-index,.conversion-bottom .bottom-hint{display:none;}
+.conversion-buy{width:max-content;min-width:0;gap:30px;padding:16px 23px 16px 25px;background:#292515;color:#fff5c9;}
+.conversion-scroll{left:7.5vw;transform:none;bottom:25px;}
+.site-nav .brand img{display:none;}
+.site-nav .brand:after{content:'FEMI9';font-family:'Playfair Display',serif;font-size:24px;letter-spacing:-.05em;font-weight:600;}
+
+/* Keep public editorial images inside the app image pipeline. */
+.real-life-card img,.blog-thumb img,.journal-hero-grid>img,.hero-image-frame img,.founder-image img,.affiliate-visual img,.affiliate-reward-visual img{background:#ead27b;}
+@media(max-width:900px){
+  .conversion-hero{height:calc(100svh - 62px);min-height:650px;background-position:54% center;}
+  .conversion-detail.detail-left{left:7vw;right:7vw;top:auto;bottom:14%;max-width:390px;}
+  .conversion-detail.detail-left strong{font-size:clamp(46px,14vw,70px);}
+  .conversion-detail.detail-left p{font-size:12px;line-height:1.6;max-width:330px;}
+  .conversion-bottom{left:7vw;bottom:6%;}
+  .conversion-scroll{left:7vw;bottom:17px;}
+}
