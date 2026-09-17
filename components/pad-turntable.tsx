@@ -32,14 +32,7 @@ export function PadTurntable({ className = '' }: { className?: string }) {
     return () => images.forEach((image) => { image.onload = null; });
   }, [frames]);
 
-  useEffect(() => {
-    const onWheel = (event: WheelEvent) => {
-      if (Math.abs(event.deltaY) < 1) return;
-      setFrame((current) => (current + (event.deltaY > 0 ? 1 : -1) + FRAME_COUNT) % FRAME_COUNT);
-    };
-    window.addEventListener('wheel', onWheel, { passive: true });
-    return () => window.removeEventListener('wheel', onWheel);
-  }, []);
+  const scrub = (direction: number) => setFrame((current) => (current + direction + FRAME_COUNT) % FRAME_COUNT);
 
   const onPointerDown = (event: React.PointerEvent<HTMLDivElement>) => {
     dragStart.current = event.clientX;
@@ -59,6 +52,7 @@ export function PadTurntable({ className = '' }: { className?: string }) {
   return (
     <div
       className={`pad-turntable ${className}`}
+      onWheel={(event) => scrub(event.deltaY > 0 ? 1 : -1)}
       onPointerDown={onPointerDown}
       onPointerMove={onPointerMove}
       onPointerUp={stopDrag}
